@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
@@ -22,6 +23,7 @@ registerLocaleData(en);
     ContentComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     NgZorroAntdModule,
